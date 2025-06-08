@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>TryOn Unified Interface</title>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;500;700;900&family=Plus+Jakarta+Sans:wght@400;500;700;800&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Outlined" rel="stylesheet">
+  <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+  <style>
+    body {
+      font-family: 'Plus Jakarta Sans', 'Noto Sans', sans-serif;
+    }
+    .hidden-section {
+      display: none;
+    }
+    .material-icons-outlined {
+      font-family: 'Material Icons Outlined';
+    }
+    iframe {
+      width: 100%;
+      height: calc(100vh - 4rem);
+      border: none;
+    }
+  </style>
+</head>
+<body class="bg-[#F7F2F5] min-h-screen">
+  <div class="relative flex flex-col min-h-screen">
+    <!-- Sección HOME -->
+    <iframe id="home-section" src="file:///C:/Users/aleec/OneDrive/Documentos/Tryon/tryon_home.html"></iframe>
+
+    <!-- Sección DISCOVER -->
+    <iframe id="discover-section" class="hidden-section" src="file:///C:/Users/aleec/OneDrive/Documentos/Tryon/tryon_discover.html"></iframe>
+
+    <!-- Sección TRYON -->
+    <iframe id="tryon-section" class="hidden-section" src="file:///C:/Users/aleec/OneDrive/Documentos/Tryon/tryon_tryon.html"></iframe>
+
+    <!-- Sección PROFILE -->
+    <iframe id="profile-section" class="hidden-section" src="file:///C:/Users/aleec/OneDrive/Documentos/Tryon/tryon_profile.html"></iframe>
+
+    <!-- Sección COLOR -->
+    <iframe id="color-section" class="hidden-section" src="file:///C:/Users/aleec/OneDrive/Documentos/Tryon/tryon_color.html"></iframe>
+
+    <!-- Footer navegación -->
+    <footer class="z-50 bg-white/90 backdrop-blur-md border-t border-[#FDECF4]/80 shadow-[0_-2px_10px_rgba(0,0,0,0.03)]">
+      <nav class="flex justify-around items-center h-16">
+        <button onclick="showSection('home')" class="flex flex-col items-center justify-center text-[#757575] hover:text-[#EA4799] py-2">
+          <span class="material-icons-outlined">home</span>
+          <span class="text-xs">Home</span>
+        </button>
+        <button onclick="showSection('discover')" class="flex flex-col items-center justify-center text-[#757575] hover:text-[#EA4799] py-2">
+          <span class="material-icons-outlined">search</span>
+          <span class="text-xs">Discover</span>
+        </button>
+        <button onclick="showSection('tryon')" class="flex flex-col items-center justify-center text-[#757575] hover:text-[#EA4799] py-2">
+          <span class="material-icons-outlined">photo_camera</span>
+          <span class="text-xs">Try On</span>
+        </button>
+        <button onclick="showSection('color')" class="flex flex-col items-center justify-center text-[#757575] hover:text-[#EA4799] py-2">
+          <span class="material-icons-outlined">palette</span>
+          <span class="text-xs">Color</span>
+        </button>
+        <button onclick="showSection('profile')" class="flex flex-col items-center justify-center text-[#757575] hover:text-[#EA4799] py-2">
+          <span class="material-icons-outlined">person_outline</span>
+          <span class="text-xs">Profile</span>
+        </button>
+      </nav>
+    </footer>
+  </div>
+
+  <script>
+    function showSection(section) {
+      const sections = ['home', 'discover', 'tryon', 'color', 'profile'];
+      sections.forEach(id => {
+        document.getElementById(id + '-section').classList.add('hidden-section');
+      });
+      document.getElementById(section + '-section').classList.remove('hidden-section');
+    }
+  </script>
+</body>
+</html>

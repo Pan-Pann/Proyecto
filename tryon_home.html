@@ -1,0 +1,83 @@
+<html>
+  <head>
+    <meta charset="utf-8"/>
+    <link crossorigin="" href="https://fonts.gstatic.com/" rel="preconnect"/>
+    <link as="style" href="https://fonts.googleapis.com/css2?display=swap&amp;family=Noto+Sans%3Awght%40400%3B500%3B700%3B900&amp;family=Plus+Jakarta+Sans%3Awght%40400%3B500%3B700%3B800" onload="this.rel='stylesheet'" rel="stylesheet"/>
+    <title>TryOn App</title>
+    <link href="data:image/x-icon;base64," rel="icon" type="image/x-icon"/>
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <style>
+      .gradient-bg {
+        background: linear-gradient(180deg, #FDECF4 0%, #E6F0FF 50%, #FFF9E6 100%);
+      }
+      .soft-shadow {
+        box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.05);
+      }
+    </style>
+    <style>
+      body {
+        min-height: max(884px, 100dvh);
+      }
+    </style>
+  </head>
+  <body class="gradient-bg">
+    <div class="relative flex size-full min-h-screen flex-col justify-between group/design-root overflow-x-hidden" style='font-family: "Plus Jakarta Sans", "Noto Sans", sans-serif;'>
+      <div class="flex-grow">
+        <div class="flex items-center px-4 pt-6 pb-4 justify-between sticky top-0 z-10 bg-opacity-80 backdrop-blur-md" style="background: linear-gradient(180deg, rgba(253, 236, 244, 0.9) 0%, rgba(230, 240, 255, 0.9) 100%);">
+          <h1 class="text-[#1b0e14] text-2xl font-bold leading-tight tracking-[-0.015em] flex-1 text-center">TryOn</h1>
+        </div>
+        <div class="px-4 pt-6 pb-2 @container">
+          <div class="flex flex-col items-stretch justify-start rounded-2xl @xl:flex-row @xl:items-start bg-white/70 backdrop-blur-sm p-4 soft-shadow">
+            <div class="w-full bg-center bg-no-repeat aspect-[4/3] @xl:aspect-video bg-cover rounded-xl overflow-hidden" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuCAqGI8ZI1BucNnxDd68vlp7TZRkEfMPQ5wkgnNDDmt19tFpEkkkolL5OYGJxzCRm1SjFLZCzAVTlMnSZspPPqkndkP5m1pjfA0d7M4WA5-ukAZ6D6AR9ZSVenc4F0BjW2jA2sKDW5u-5UP0jNNDOKNYa9jlSka4ykdVO3QrCb3YJz8ViGgxg2T5-ipnjRFgxdXku9MSzdoN9NEQXm01N509E-fc7vrWUjtO3NGWIXmFpll5nZfvlXVGhub54j4LRIWqylbuuredUHN");'>
+            </div>
+            <div class="flex w-full min-w-0 @xl:min-w-72 grow flex-col items-stretch justify-center gap-2 pt-4 @xl:pt-0 @xl:px-4">
+              <h3 class="text-[#1b0e14] text-xl font-bold leading-tight tracking-[-0.015em]">Body Scan</h3>
+              <p class="text-[#6B5E65] text-sm font-normal leading-relaxed">Scan your body to create a 3D avatar and get your perfect fit.</p>
+              <button class="flex min-w-[84px] max-w-[480px] mt-2 cursor-pointer items-center justify-center overflow-hidden rounded-xl h-12 px-6 bg-[#ea4798] hover:bg-opacity-90 transition-colors text-white text-base font-semibold leading-normal tracking-wide soft-shadow">
+                <span class="truncate">Start Scan</span>
+              </button>
+            </div>
+          </div>
+        </div>
+        <h2 class="text-[#1b0e14] text-xl font-bold leading-tight tracking-[-0.015em] px-4 pb-2 pt-6">Explore Catalog</h2>
+        <div class="flex overflow-x-auto [-ms-scrollbar-style:none] [scrollbar-width:none] [&amp;::-webkit-scrollbar]:hidden px-4 pb-4">
+          <div class="flex items-stretch gap-4">
+            <div class="flex h-full flex-1 flex-col gap-2 rounded-xl min-w-40 w-40 bg-white/70 backdrop-blur-sm p-3 soft-shadow">
+              <div class="w-full bg-center bg-no-repeat aspect-square bg-cover rounded-lg" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuDVfuVG5p87wxCETcl3wT2jIpSmjuH42vr9Jmc7nDfYc_PmhH-PjFccN7G_HOz0H6OejYVKGDzfm9OELvcTBq-9lPzaK3z1FClPx9dktSzGOa8lGu_HHmNthMTqc9Xpn7hxK9UZD_fNjz2omsv_6_fM9yU0E3ysFp12OhCaVGplXgZzpUpyZ3r-4LrfEiOsOelqorKoa-QtRCf-Gl-HutMhiGT6qf05Gz13-UO_fOzHcsccGerCdE_IEZx4phkiUSU95Rp6oXZyxnjW");'></div>
+              <p class="text-[#1b0e14] text-sm font-semibold leading-normal text-center">Dresses</p>
+            </div>
+            <div class="flex h-full flex-1 flex-col gap-2 rounded-xl min-w-40 w-40 bg-white/70 backdrop-blur-sm p-3 soft-shadow">
+              <div class="w-full bg-center bg-no-repeat aspect-square bg-cover rounded-lg" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuAfsOIKB65S5gpuz_tgGKgu_ehzOrNGsyr0QrsIqI0fuwGjPiSeI2IAVw1mkzA25lC3xNs6wAJ0MRcqjuJECxoW1_YGpBqx7ltSGksV_UBsvsOqx25_bT9Y2UYT7mjhr0U7ZYOEJtrJuqKLYmwrNoDJRTtODOnjyr9LOWMx3gjkFtPXWPNuQ0xWBBrfEP8Sf_2z0UBt-Iz0qHIqMGyLv1xe2MUZU7Ptp-5JjOVNndW7fShKSwYyxf34u56ohB6jWEfLaJr0Ylu1U_ZQ");'></div>
+              <p class="text-[#1b0e14] text-sm font-semibold leading-normal text-center">Shirts</p>
+            </div>
+            <div class="flex h-full flex-1 flex-col gap-2 rounded-xl min-w-40 w-40 bg-white/70 backdrop-blur-sm p-3 soft-shadow">
+              <div class="w-full bg-center bg-no-repeat aspect-square bg-cover rounded-lg" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuA24p6plRie9m_GEqUZLjyUCV0WkVBjm7h6KMoB1kZrox8RWOYjxWqpzMKqgUeXuS9rIzwmyhkeNRJ-ayyi0ezAr0yWCbGApScy3miGtLVYo7hRPIb2y2KDjApoOhT-skvUZ8HiyA1HbVNygwlta2acO6n8g1u1zMUA7Wmfie9jbb2KnsATcmlRJAmOElJWGVA9MTJtFxSIAACR0lplxxdFZdkWku3Qz6DVMTvk39kw8StQ1MEqPNUDXVvuWBFR02JPKSJLpvLXcidj");'></div>
+              <p class="text-[#1b0e14] text-sm font-semibold leading-normal text-center">Jackets</p>
+            </div>
+          </div>
+        </div>
+        <h2 class="text-[#1b0e14] text-xl font-bold leading-tight tracking-[-0.015em] px-4 pb-2 pt-4">Weather Picks</h2>
+        <div class="px-4 pb-4">
+          <div class="flex items-center justify-between gap-4 rounded-2xl bg-white/70 backdrop-blur-sm p-4 soft-shadow">
+            <div class="flex flex-[2_2_0px] flex-col gap-2">
+              <div class="flex items-center gap-2">
+                <div class="text-[#FFC107]" data-icon="Sun" data-size="24px" data-weight="fill">
+                  <svg fill="currentColor" height="24px" viewBox="0 0 256 256" width="24px" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M128,56a72,72,0,1,0,72,72A72.08,72.08,0,0,0,128,56Zm0,128a56,56,0,1,1,56-56A56.06,56.06,0,0,1,128,184ZM128,32a8,8,0,0,0-8,8V56a8,8,0,0,0,16,0V40A8,8,0,0,0,128,32ZM128,200a8,8,0,0,0-8,8v16a8,8,0,0,0,16,0V208A8,8,0,0,0,128,200ZM216,120H200a8,8,0,0,0,0,16h16a8,8,0,0,0,0-16ZM56,120H40a8,8,0,0,0,0,16H56a8,8,0,0,0,0-16ZM195.92,60.08a8,8,0,0,0-11.32,0l-11.31,11.31a8,8,0,0,0,11.31,11.32l11.31-11.31A8,8,0,0,0,195.92,60.08ZM72.71,171.93a8,8,0,0,0-11.32,0L49.07,183.25a8,8,0,0,0,11.31,11.31l11.31-11.31A8,8,0,0,0,72.71,171.93ZM60.08,60.08a8,8,0,0,0,0,11.31L71.39,82.71a8,8,0,0,0,11.32-11.32L71.39,60.08A8,8,0,0,0,60.08,60.08ZM183.24,171.93l-11.31,11.31a8,8,0,0,0,11.31,11.32l11.31-11.31a8,8,0,0,0-11.31-11.32Z"></path>
+                  </svg>
+                </div>
+                <h4 class="text-[#1b0e14] text-base font-semibold leading-tight">Sunny Days</h4>
+              </div>
+              <p class="text-[#6B5E65] text-sm font-normal leading-relaxed">Light and airy styles for warm weather.</p>
+              <button class="flex min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-xl h-10 px-4 mt-2 bg-[#F3E7ED] hover:bg-opacity-80 transition-colors text-[#974E73] text-sm font-medium leading-normal soft-shadow">
+                <span class="truncate">Shop Collection</span>
+              </button>
+            </div>
+            <div class="w-full bg-center bg-no-repeat aspect-square @sm:aspect-video bg-cover rounded-xl flex-1 max-w-[120px] @sm:max-w-[150px]" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuBnEQ7RlYtdmJBAC07ckWB7yWa7cJc9pfgBU-4tJy6nZn6l8P8CGQG_jU99bE9PYoXjGpXN2nsMTG2e7m24puzK5twV49mlU9HNFpEntVj88GZMNowzrCCboe-uAHONlJre95FrfpXhZDmBo4dovSsAQ87JV9IfP93z3oNX6NJPApcbuyUEvTs0wSZf0HTJoVfQlTD5cU7lI1E1LL0yQ1iibEQasetNSCTDMb1DBKjZc3WzoGVrW_AcvUWCiQrEmwziNzVCankQF3fx");'>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

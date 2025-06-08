@@ -1,0 +1,55 @@
+<html>
+  <head>
+    <meta charset="utf-8"/>
+    <link crossorigin="" href="https://fonts.gstatic.com/" rel="preconnect"/>
+    <link as="style" href="https://fonts.googleapis.com/css2?display=swap&amp;family=Noto+Sans%3Awght%40400%3B500%3B700%3B900&amp;family=Plus+Jakarta+Sans%3Awght%40400%3B500%3B700%3B800" onload="this.rel='stylesheet'" rel="stylesheet"/>
+    <title>Stitch Design</title>
+    <link href="data:image/x-icon;base64," rel="icon" type="image/x-icon"/>
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <style>
+      .active-nav-icon svg {
+        fill: #ea4799;
+      }
+      .active-nav-icon span {
+        color: #ea4799;
+      }
+    </style>
+    <style>
+      body {
+        min-height: max(884px, 100dvh);
+      }
+    </style>
+  </head>
+  <body class="bg-[#fcf8fa]" style='font-family: "Plus Jakarta Sans", "Noto Sans", sans-serif;'>
+    <div class="relative flex size-full min-h-screen flex-col justify-between group/design-root overflow-x-hidden">
+      <header class="sticky top-0 z-10 bg-[#fcf8fa]/80 backdrop-blur-md">
+        <div class="flex items-center p-4 pb-2 justify-end">
+        </div>
+        <h1 class="text-[#1b0e14] tracking-tight text-3xl font-bold leading-tight px-6 text-center pb-2 pt-3">Try on virtually</h1>
+        <p class="text-[#503e47] text-base font-normal leading-relaxed pb-4 pt-1 px-6 text-center">
+          Follow the guide to take a photo or activate the live camera.
+        </p>
+      </header>
+      <main class="flex-grow">
+        <div class="px-4 pt-2 pb-4">
+          <div class="w-full overflow-hidden bg-gray-200 aspect-[3/4] rounded-2xl shadow-lg flex items-center justify-center">
+            <div class="w-full h-full bg-center bg-no-repeat bg-cover" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuAD7xWbzbJE7HoRC_6iFo-Oxgl8dTyLpNFFiJ337_x7iwKRFw71zIRxLu8GHlSa7Ozj7aZbk4J2GbiQr78x4d1zRsQiaJ3F8nh1zSaeO4ymO4ENXA7rrMHkvoBm-5z2RWlzYGI3rEr5fiu-hq4xujvuiyDoZOjQxxJskzDo91SRkbXyd0BpXmb96zHJ7Lsul4SeV5QS2xm_JEeDlgfuSrlenTRx-Sjn-SCkxrLeyEFLFtcMPgA88jX_duEZZO4FSScMDjI1cY-9dT3n");'>
+              <div class="flex flex-col items-center justify-center h-full bg-black/30 text-white p-6 text-center">
+                <svg class="mb-4 opacity-80" fill="currentColor" height="64" viewBox="0 0 256 256" width="64" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M208,56H180.28L166.65,35.56A8,8,0,0,0,160,32H96a8,8,0,0,0-6.65,3.56L75.71,56H48A24,24,0,0,0,24,80V192a24,24,0,0,0,24,24H208a24,24,0,0,0,24-24V80A24,24,0,0,0,208,56Zm8,136a8,8,0,0,1-8,8H48a8,8,0,0,1-8-8V80a8,8,0,0,1,8-8H80a8,8,0,0,0,6.66-3.56L100.28,48h55.43l13.63,20.44A8,8,0,0,0,176,72h32a8,8,0,0,1,8,8ZM128,88a44,44,0,1,0,44,44A44.05,44.05,0,0,0,128,88Zm0,72a28,28,0,1,1,28-28A28,28,0,0,1,128,160Z"></path>
+                </svg>
+                <p class="font-semibold">Position yourself in the frame</p>
+                <p class="text-sm opacity-80">Make sure your face and upper body are visible.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="flex px-4 py-3 justify-center">
+          <button class="flex min-w-[84px] max-w-[480px] w-full sm:w-auto cursor-pointer items-center justify-center overflow-hidden rounded-xl h-12 px-6 bg-[#ea4798] text-white text-base font-semibold leading-normal tracking-wide shadow-md hover:bg-opacity-90 transition-colors">
+            <span class="truncate">Use a generic avatar</span>
+          </button>
+        </div>
+      </main>
+    </div>
+  </body>
+</html>

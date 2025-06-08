@@ -1,0 +1,159 @@
+<html>
+  <head>
+    <meta charset="utf-8"/>
+    <link crossorigin="" href="https://fonts.gstatic.com/" rel="preconnect"/>
+    <link as="style" href="https://fonts.googleapis.com/css2?display=swap&amp;family=Noto+Sans%3Awght%40400%3B500%3B700%3B900&amp;family=Plus+Jakarta+Sans%3Awght%40400%3B500%3B700%3B800" onload="this.rel='stylesheet'" rel="stylesheet"/>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Outlined" rel="stylesheet"/>
+    <title>Stitch Design</title>
+    <link href="data:image/x-icon;base64," rel="icon" type="image/x-icon"/>
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <style>
+      .gradient-bg {
+        background: linear-gradient(180deg, #FDECF4 0%, #E6F0FF 50%, #FFF9E6 100%);
+      }
+      .soft-shadow {
+        box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.05);
+      }
+      .material-icons-outlined {
+        font-family: 'Material Icons Outlined';
+        font-weight: normal;
+        font-style: normal;
+        font-size: 24px;
+        display: inline-block;
+        line-height: 1;
+        text-transform: none;
+        letter-spacing: normal;
+        word-wrap: normal;
+        white-space: nowrap;
+        direction: ltr;
+        -webkit-font-smoothing: antialiased;
+        text-rendering: optimizeLegibility;
+        -moz-osx-font-smoothing: grayscale;
+        font-feature-settings: 'liga';
+      }
+    </style>
+    <style>
+      body {
+        min-height: max(884px, 100dvh);
+      }
+    </style>
+  </head>
+  <body class="bg-[#F7F2F5]">
+    <div class="relative flex size-full min-h-screen flex-col justify-between group/design-root overflow-x-hidden" style='font-family: "Plus Jakarta Sans", "Noto Sans", sans-serif;'>
+      <div class="bg-[#F7F2F5]">
+        <header class="sticky top-0 z-10 bg-[#F7F2F5]/80 backdrop-blur-sm">
+          <div class="flex items-center p-4 pb-3 justify-between">
+            <h1 class="text-[#1E1E1E] text-xl font-bold leading-tight tracking-tight flex-1 text-center pl-12">Virtual Closet</h1>
+            <div class="flex w-12 items-center justify-end">
+              <button class="flex max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-xl h-12 bg-transparent text-[#1E1E1E] gap-2 text-base font-bold leading-normal tracking-[0.015em] min-w-0 p-0">
+                <span class="material-icons-outlined text-[#1E1E1E]">shopping_bag</span>
+              </button>
+            </div>
+          </div>
+          <div class="px-4 py-3">
+            <label class="flex flex-col min-w-40 h-12 w-full">
+              <div class="flex w-full flex-1 items-stretch rounded-xl h-full shadow-sm">
+                <div class="text-[#EA4799] flex border-none bg-white items-center justify-center pl-4 rounded-l-xl border-r-0">
+                  <span class="material-icons-outlined">search</span>
+                </div>
+                <input class="form-input flex w-full min-w-0 flex-1 resize-none overflow-hidden rounded-r-xl text-[#1E1E1E] focus:outline-0 focus:ring-2 focus:ring-[#EA4799]/50 border-none bg-white focus:border-none h-full placeholder:text-[#A0A0A0] px-4 pl-2 text-base font-normal leading-normal" placeholder="Search for items" value=""/>
+              </div>
+            </label>
+          </div>
+          <div class="flex gap-2.5 p-3 overflow-x-auto scrollbar-hide">
+            <button class="flex h-10 shrink-0 items-center justify-center gap-x-1.5 rounded-full bg-white hover:bg-[#EA4799]/10 border border-gray-200 px-4 py-2 transition-colors duration-200">
+              <p class="text-[#1E1E1E] text-sm font-medium leading-normal">Clothing Type</p>
+              <span class="material-icons-outlined text-[#1E1E1E] text-lg">expand_more</span>
+            </button>
+            <button class="flex h-10 shrink-0 items-center justify-center gap-x-1.5 rounded-full bg-white hover:bg-[#EA4799]/10 border border-gray-200 px-4 py-2 transition-colors duration-200">
+              <p class="text-[#1E1E1E] text-sm font-medium leading-normal">Color</p>
+              <span class="material-icons-outlined text-[#1E1E1E] text-lg">expand_more</span>
+            </button>
+            <button class="flex h-10 shrink-0 items-center justify-center gap-x-1.5 rounded-full bg-white hover:bg-[#EA4799]/10 border border-gray-200 px-4 py-2 transition-colors duration-200">
+              <p class="text-[#1E1E1E] text-sm font-medium leading-normal">Size</p>
+              <span class="material-icons-outlined text-[#1E1E1E] text-lg">expand_more</span>
+            </button>
+            <button class="flex h-10 shrink-0 items-center justify-center gap-x-1.5 rounded-full bg-white hover:bg-[#EA4799]/10 border border-gray-200 px-4 py-2 transition-colors duration-200">
+              <p class="text-[#1E1E1E] text-sm font-medium leading-normal">Season</p>
+              <span class="material-icons-outlined text-[#1E1E1E] text-lg">expand_more</span>
+            </button>
+          </div>
+        </header>
+        <main class="grid grid-cols-1 sm:grid-cols-2 gap-4 p-4">
+          <article class="bg-white rounded-xl shadow-lg overflow-hidden transition-transform hover:scale-105 duration-300 ease-in-out group">
+            <div class="relative">
+              <div class="w-full bg-center bg-no-repeat aspect-[3/2] bg-cover" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuBKDj03yT6OeUVXhTcVOuzKd3NVALl1vFInm3igKKQCFkSsU2-ulaA6EmB8pdQS1YNGE3iU93Ipa4aDxjnG1_jajO7QJFDX0AMUvu4GOTi0HONAT4jZHL8VqhjyLbYLQ02_TgaZ1kaayRu_BtknSTiMXss4xfLWjMNoVJt22yS338UQ7E6OfQ5WD00swjrk5LGgQMFXCPB5GRQsL_MKGc9qTvvYWdb19-a3q1FrZLNs3dHqf4Rp_wWIsIltf2y4c3DjFGwwsCbr0_Tu");'></div>
+              <button class="absolute top-3 right-3 bg-[#EA4799] text-white rounded-full p-2 shadow-md hover:bg-[#d43fa0] transition-colors">
+                <span class="material-icons-outlined text-xl">camera_alt</span>
+              </button>
+            </div>
+            <div class="p-4">
+              <h3 class="text-[#1E1E1E] text-lg font-semibold leading-tight tracking-tight">Summer Breeze Dress</h3>
+              <p class="text-[#757575] text-sm font-normal leading-normal mt-1">Light and airy cotton dress</p>
+              <div class="flex items-center justify-between mt-3">
+                <p class="text-[#1E1E1E] text-lg font-bold">$49.99</p>
+                <button class="text-[#EA4799] hover:text-[#d43fa0] transition-colors">
+                  <span class="material-icons-outlined">favorite_border</span>
+                </button>
+              </div>
+            </div>
+          </article>
+          <article class="bg-white rounded-xl shadow-lg overflow-hidden transition-transform hover:scale-105 duration-300 ease-in-out group">
+            <div class="relative">
+              <div class="w-full bg-center bg-no-repeat aspect-[3/2] bg-cover" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuCBoJkPCDXYwJ7FIM7C5fqcTR7AV7ESleGW9w9N3m4EjqP1-B8Wyq5OEMrOd_nDN_sqgS5WTI1od1ZrlseY3wJfUttBqMr7VlA_neuQ6CX7I8EgrVS6PrrRg0Be3POsi7NlEfqwh6cpPaKGINVU4Wf0ZR280ulfJbpOOepeoP7O2pHYxMebz-FZk1bL99ZdK10wLSA6TN66lCrzHy0KuR3MkzJsOmfobz0L3D_SmZ_rRSDrS5FTOaRx01NQu8JbkRxLYVDyr6qbjeAZ");'></div>
+              <button class="absolute top-3 right-3 bg-[#EA4799] text-white rounded-full p-2 shadow-md hover:bg-[#d43fa0] transition-colors">
+                <span class="material-icons-outlined text-xl">camera_alt</span>
+              </button>
+            </div>
+            <div class="p-4">
+              <h3 class="text-[#1E1E1E] text-lg font-semibold leading-tight tracking-tight">Urban Chic Jacket</h3>
+              <p class="text-[#757575] text-sm font-normal leading-normal mt-1">Stylish denim jacket for any occasion</p>
+              <div class="flex items-center justify-between mt-3">
+                <p class="text-[#1E1E1E] text-lg font-bold">$79.99</p>
+                <button class="text-[#EA4799] hover:text-[#d43fa0] transition-colors">
+                  <span class="material-icons-outlined">favorite_border</span>
+                </button>
+              </div>
+            </div>
+          </article>
+          <article class="bg-white rounded-xl shadow-lg overflow-hidden transition-transform hover:scale-105 duration-300 ease-in-out group">
+            <div class="relative">
+              <div class="w-full bg-center bg-no-repeat aspect-[3/2] bg-cover" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuDEZwDTdRm_4S6nK8lfC-VvAx2-Gh8Zvkpf-AxcWLHQC5Tk9Xz-gtfFldezKthyRO0qk9sw-0rnacGJUmuGuo_d2XQsCCrzrHD_v0jOgNJK2kclpQKtZj9O5Ipml6CFYur2lToR_KlVE6g39GkdNlFL3MhKWXdxfZtIy0Tkr773sdBN_KRhgRoLmFpI4Oxku11fb36tQ7jBqg9JvwzGXhEl5SJ1yPcW2C3JTX8-PbmJQlzPLQY8XKn2omK_-n5g5OrYm5wI1L1VRERK");'></div>
+              <button class="absolute top-3 right-3 bg-[#EA4799] text-white rounded-full p-2 shadow-md hover:bg-[#d43fa0] transition-colors">
+                <span class="material-icons-outlined text-xl">camera_alt</span>
+              </button>
+            </div>
+            <div class="p-4">
+              <h3 class="text-[#1E1E1E] text-lg font-semibold leading-tight tracking-tight">Casual Comfort Tee</h3>
+              <p class="text-[#757575] text-sm font-normal leading-normal mt-1">Soft and breathable cotton t-shirt</p>
+              <div class="flex items-center justify-between mt-3">
+                <p class="text-[#1E1E1E] text-lg font-bold">$39.99</p>
+                <button class="text-[#EA4799] hover:text-[#d43fa0] transition-colors">
+                  <span class="material-icons-outlined">favorite_border</span>
+                </button>
+              </div>
+            </div>
+          </article>
+          <article class="bg-white rounded-xl shadow-lg overflow-hidden transition-transform hover:scale-105 duration-300 ease-in-out group">
+            <div class="relative">
+              <div class="w-full bg-center bg-no-repeat aspect-[3/2] bg-cover" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuBwK2H6YyM9is6ZzSeImXXMDKdLCShK6VWEMSnjz4jD859yu1-3TgVKF62O-654ur8TuzVZlOhhBCV66KiY_0o8_N9vciFBkQyjU7LUVx1qN5N1Vm2FzJ6wvnVskALhFEvhgeM8mGEihIhTwC-77kZzF-nVGh-17x6mceABB1ukdwtSNQfz6pewP8c56QOhZZNPe15Q8dlJsSLTcTML1IlpQVGTe6yrZzCL3wlY-Pcri4W5xfywVcPP5c99TTVjyOY3gPrBd1m4jWcR");'></div>
+              <button class="absolute top-3 right-3 bg-[#EA4799] text-white rounded-full p-2 shadow-md hover:bg-[#d43fa0] transition-colors">
+                <span class="material-icons-outlined text-xl">camera_alt</span>
+              </button>
+            </div>
+            <div class="p-4">
+              <h3 class="text-[#1E1E1E] text-lg font-semibold leading-tight tracking-tight">Autumn Hues Sweater</h3>
+              <p class="text-[#757575] text-sm font-normal leading-normal mt-1">Cozy knit sweater in warm tones</p>
+              <div class="flex items-center justify-between mt-3">
+                <p class="text-[#1E1E1E] text-lg font-bold">$59.99</p>
+                <button class="text-[#EA4799] hover:text-[#d43fa0] transition-colors">
+                  <span class="material-icons-outlined">favorite_border</span>
+                </button>
+              </div>
+            </div>
+          </article>
+        </main>
+      </div>
+    </div>
+  </body>
+</html>

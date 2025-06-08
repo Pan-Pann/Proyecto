@@ -1,0 +1,99 @@
+<html>
+  <head>
+    <meta charset="utf-8"/>
+    <link crossorigin="" href="https://fonts.gstatic.com/" rel="preconnect"/>
+    <link as="style" href="https://fonts.googleapis.com/css2?display=swap&amp;family=Plus+Jakarta+Sans%3Awght%40400%3B500%3B700%3B800&amp;family=Noto+Sans%3Awght%40400%3B500%3B700%3B900" onload="this.rel='stylesheet'" rel="stylesheet"/>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Outlined" rel="stylesheet"/>
+    <title>Stitch Design</title>
+    <link href="data:image/x-icon;base64," rel="icon" type="image/x-icon"/>
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <style>
+      .active-filter {
+        background-color: #ea4799 !important;
+        color: #fcf8fa !important;
+      }
+      .inactive-filter {
+        background-color: #f3e7ed;
+        color: #1b0e14;
+      }
+      .inactive-filter:hover {
+        background-color: #e8d9e1;
+      }
+      .active-nav-icon {
+        color: #ea4799 !important;
+      }
+      .active-nav-icon svg {
+        fill: #ea4799 !important;
+      }
+      .inactive-nav-icon {
+        color: #974e73;
+      }
+      .inactive-nav-icon:hover {
+        color: #ea4799;
+      }
+      .material-icons-outlined {
+        font-size: 24px;
+      }
+    </style>
+    <style>
+      body {
+        min-height: max(884px, 100dvh);
+      }
+    </style>
+  </head>
+  <body class="bg-[#fcf8fa]" style='font-family: "Plus Jakarta Sans", "Noto Sans", sans-serif;'>
+    <div class="relative flex size-full min-h-screen flex-col justify-between group/design-root overflow-x-hidden">
+      <div class="flex-grow">
+        <header class="sticky top-0 z-10 bg-[#fcf8fa]/80 backdrop-blur-sm">
+          <div class="flex items-center p-4 pb-3">
+            <h1 class="text-[#1b0e14] text-xl font-bold leading-tight tracking-tight flex-1 text-center pr-10">Color Analysis</h1>
+          </div>
+        </header>
+        <main class="pb-20">
+          <section class="px-4 pt-4 pb-2">
+            <h2 class="text-[#1b0e14] text-2xl font-bold leading-tight tracking-tight mb-3">Your Color Palette</h2>
+            <div class="w-full overflow-hidden rounded-2xl shadow-sm">
+              <div class="w-full bg-center bg-no-repeat bg-cover aspect-[2/1]" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuD7iRand0BsU5MyJstn-bWRX6j1hOVjQK0ymSjgClq7osh4Hh_JumgXoLHRBkEMKCIv1_VBoMrKaORmugGAd56SauamEmpS7CdMchagAtLFiMELgkR37nXo5ahAuOfjsy7jvbFFxdyGiPep83B_JMpoNDV4AX22mieYcZN8AS8MMdBoU2OcO3XwehPkN0a37zlIxZHizlIWgLVkrD0O5KhAKihokn6rZb52Yj8MisGQscv3jVDHd1mAz135fytgn9L0-vDJzby71w5W");'></div>
+            </div>
+          </section>
+          <section class="pt-6 pb-2">
+            <h2 class="text-[#1b0e14] text-2xl font-bold leading-tight tracking-tight px-4 mb-4">Recommendations</h2>
+            <div class="flex gap-3 px-4 pb-2 overflow-x-auto whitespace-nowrap no-scrollbar">
+              <button class="flex h-10 shrink-0 items-center justify-center gap-x-2 rounded-xl px-5 text-sm font-semibold leading-normal active-filter transition-colors duration-150">All</button>
+              <button class="flex h-10 shrink-0 items-center justify-center gap-x-2 rounded-xl px-5 text-sm font-semibold leading-normal inactive-filter transition-colors duration-150">Tops</button>
+              <button class="flex h-10 shrink-0 items-center justify-center gap-x-2 rounded-xl px-5 text-sm font-semibold leading-normal inactive-filter transition-colors duration-150">Bottoms</button>
+              <button class="flex h-10 shrink-0 items-center justify-center gap-x-2 rounded-xl px-5 text-sm font-semibold leading-normal inactive-filter transition-colors duration-150">Dresses</button>
+              <button class="flex h-10 shrink-0 items-center justify-center gap-x-2 rounded-xl px-5 text-sm font-semibold leading-normal inactive-filter transition-colors duration-150">Accessories</button>
+            </div>
+          </section>
+          <div class="grid grid-cols-1 sm:grid-cols-2 gap-x-4 gap-y-6 px-4 pt-4">
+            <article class="flex flex-col rounded-xl overflow-hidden shadow-sm bg-white">
+              <div class="w-full bg-center bg-no-repeat aspect-[4/3] bg-cover" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuCJUgPdmXmFgrY6iQOZn0slAz5ykZWg4w7E-pwHeKDf8lIHwNE2bo-DbDmROy-VFdcJmurizdpQfnwFsP2bMMhKGuht9dbNBuNGDWSo-cygeMKWSAX3nGlT_CXSfT1wNRlfmExS2-0pOFTpDYDl0BqSyIFLLYr2ds-j7_6049ePFcLpte1sKflxljRSTGfpMNGcRgL4lR0UF3HC4cVp5NvyWH8DH-7Q2V-yici51NKAXZ97wJp6YIR68yipmBHIKh4S87DtGGnpYlD1");'></div>
+              <div class="p-4">
+                <h3 class="text-[#1b0e14] text-lg font-bold leading-tight tracking-tight">Flowy Linen Top</h3>
+                <p class="text-[#7f6a75] text-sm font-normal leading-normal mt-1">Lightweight and breathable for warm weather</p>
+                <p class="text-[#ea4799] text-base font-semibold leading-normal mt-2">$49.99</p>
+              </div>
+            </article>
+            <article class="flex flex-col rounded-xl overflow-hidden shadow-sm bg-white">
+              <div class="w-full bg-center bg-no-repeat aspect-[4/3] bg-cover" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuBfVrwaJwcYR05ar8ywHtgcaJ2qNSWhC9Uwd_GkaSAlA7IPtR1Q4TvQxY40NsGWTvp3LJDV_SZ5cKQ8Nn2sV1NGjK-b4yeuhJUK_6LUeLpaiVSlRkMr9QkCVEtsNMYCnzHM3ugK-uHmLWE6MXftanju5xcHSFm0cs9xWBZqkusoR7eO_SUtfvKWwbdBANTixdEX01UJ7A0r1jUf40m5yL3s42SQtmzNq9vDvC6JZonTNaYiHhsMSuyV4wlF2HtcuF1jF5l3CQp_NIym");'></div>
+              <div class="p-4">
+                <h3 class="text-[#1b0e14] text-lg font-bold leading-tight tracking-tight">Cotton Blend Shorts</h3>
+                <p class="text-[#7f6a75] text-sm font-normal leading-normal mt-1">Comfortable and versatile for everyday wear</p>
+                <p class="text-[#ea4799] text-base font-semibold leading-normal mt-2">$79.99</p>
+              </div>
+            </article>
+            <article class="flex flex-col rounded-xl overflow-hidden shadow-sm bg-white">
+              <div class="w-full bg-center bg-no-repeat aspect-[4/3] bg-cover" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuAtwYijQpYnIJMnPLrXfWO0cIIF_aWyUfMfZbQVtpLjqmu9c2-HtJrvcdpy0YiSsYKES4mCPa91l1W2i0KoKxukOmopdW0zsFVmnIEyg8oNqCTcbNv4eR3nquyLOE9Uzxi5Ev8U_4dVxelCdX7ICqg_LAi0ijhiIyOvRjRwoyZ_xB-u0olHMhiXZzQhdeiVaKjjuFfX07heiPTDpZyoaDWpH0bCwQ45DKxjJKtXg9YXALRQnMXchkmRpYmAmXA5VzukeYgZNNKCYZ5_");'></div>
+              <div class="p-4">
+                <h3 class="text-[#1b0e14] text-lg font-bold leading-tight tracking-tight">Silk Blend Scarf</h3>
+                <p class="text-[#7f6a75] text-sm font-normal leading-normal mt-1">Add a touch of elegance to any outfit</p>
+                <p class="text-[#ea4799] text-base font-semibold leading-normal mt-2">$59.99</p>
+              </div>
+            </article>
+          </div>
+        </main>
+      </div>
+    </div>
+  </body>
+</html>
