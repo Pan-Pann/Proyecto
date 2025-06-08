@@ -8,9 +8,6 @@
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Outlined" rel="stylesheet">
   <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
   <style>
-    body {
-      font-family: 'Plus Jakarta Sans', 'Noto Sans', sans-serif;
-    }
     .hidden-section {
       display: none;
     }
@@ -22,46 +19,15 @@
       height: calc(100vh - 4rem);
       border: none;
     }
-    /* Loader styles */
-    .gradient-bg {
-      background: linear-gradient(135deg, #fde2e4 0%, #e0d3f5 50%, #ccebff 100%);
-    }
-    .pulsating-dots span {
-      animation: pulse 1.4s infinite ease-in-out both;
-    }
-    .pulsating-dots span:nth-child(1) {
-      animation-delay: -0.32s;
-    }
-    .pulsating-dots span:nth-child(2) {
-      animation-delay: -0.16s;
-    }
-    @keyframes pulse {
-      0%, 80%, 100% { transform: scale(0);}
-      40% { transform: scale(1.0);}
+    /* Solo el loader ocupa el 100vh completo */
+    #loader {
+      height: 100vh !important;
     }
   </style>
 </head>
 <body class="bg-[#F7F2F5] min-h-screen">
   <!-- Pantalla de carga -->
-  <div id="loader" class="fixed inset-0 z-50 flex flex-col min-h-screen gradient-bg justify-between group/design-root overflow-x-hidden">
-    <header class="pt-8 pb-4 px-6">
-      <h1 class="text-[#331E3E] text-3xl font-bold leading-tight tracking-tight text-center" style="font-family: 'Plus Jakarta Sans', sans-serif;">TryOn</h1>
-    </header>
-    <main class="flex flex-col items-center justify-center flex-grow px-6">
-      <div class="flex flex-col items-center space-y-8">
-        <div class="pulsating-dots flex space-x-2">
-          <span class="block w-3 h-3 bg-[#A26EA2] rounded-full"></span>
-          <span class="block w-3 h-3 bg-[#A26EA2] rounded-full"></span>
-          <span class="block w-3 h-3 bg-[#A26EA2] rounded-full"></span>
-        </div>
-        <p class="text-[#5E3A5E] text-lg font-medium leading-normal">Loading your style...</p>
-      </div>
-    </main>
-    <footer class="pb-8 pt-4 px-6">
-      <p class="text-[#5E3A5E] text-xs font-normal leading-normal text-center">Version beta 1.01</p>
-    </footer>
-  </div>
-
+    <iframe id="loader" src="tryon_carga.html"></iframe>
   <!-- App principal -->
   <div id="main-app" class="relative flex flex-col min-h-screen" style="display:none;">
     <!-- Sección HOME -->
