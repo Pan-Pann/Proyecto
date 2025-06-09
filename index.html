@@ -23,11 +23,21 @@
     #loader {
       height: 100vh !important;
     }
+    /* Instrucciones ocupan todo el alto */
+    #info-section, #info2-section {
+      height: 100vh !important;
+      z-index: 40;
+      background: transparent;
+    }
   </style>
 </head>
 <body class="bg-[#F7F2F5] min-h-screen">
   <!-- Pantalla de carga -->
-    <iframe id="loader" src="tryon_carga.html"></iframe>
+  <iframe id="loader" src="tryon_carga.html"></iframe>
+  <!-- Instrucciones 1 -->
+  <iframe id="info-section" src="tryon_info.html" style="display:none;"></iframe>
+  <!-- Instrucciones 2 -->
+  <iframe id="info2-section" src="tryon_info2.html" style="display:none;"></iframe>
   <!-- App principal -->
   <div id="main-app" class="relative flex flex-col min-h-screen" style="display:none;">
     <!-- Sección HOME -->
@@ -65,12 +75,43 @@
   </div>
 
   <script>
-    // Pantalla de carga: oculta loader y muestra app después de 2 segundos
+    // Pantalla de carga: oculta loader y muestra instrucciones después de 2 segundos
     window.addEventListener('DOMContentLoaded', function() {
       setTimeout(function() {
         document.getElementById('loader').style.display = 'none';
-        document.getElementById('main-app').style.display = '';
+        document.getElementById('info-section').style.display = '';
       }, 2000);
+    });
+
+    // Escuchar swipe para pasar de info a info2
+    let startX = null;
+    document.getElementById('info-section').addEventListener('load', function() {
+      const iframe = document.getElementById('info-section');
+      iframe.contentWindow.addEventListener('touchstart', function(e) {
+        startX = e.touches[0].clientX;
+      });
+      iframe.contentWindow.addEventListener('touchend', function(e) {
+        if (startX !== null) {
+          let endX = e.changedTouches[0].clientX;
+          if (startX - endX > 50) { // swipe Left
+            document.getElementById('info-section').style.display = 'none';
+            document.getElementById('info2-section').style.display = '';
+          }
+          startX = null;
+        }
+      });
+    });
+
+    // Botón siguiente en info2: pasar a la app principal
+    document.getElementById('info2-section').addEventListener('load', function() {
+      const iframe = document.getElementById('info2-section');
+      // Escuchar click en el botón "Siguiente" dentro del iframe
+      iframe.contentWindow.document.addEventListener('click', function(e) {
+        if (e.target && e.target.closest('button')) {
+          document.getElementById('info2-section').style.display = 'none';
+          document.getElementById('main-app').style.display = '';
+        }
+      });
     });
 
     // Navegación entre secciones
